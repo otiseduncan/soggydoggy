@@ -54,7 +54,7 @@ export default function SoggyDoggyWebsiteMockup() {
           <div className="flex items-center gap-3">
             <div className="h-12 w-12 overflow-hidden rounded-full bg-[#e8def7] ring-2 ring-[#efe7f9]">
               <img
-                src="/soggydoggy/images/soggydoggylogo.jpg"
+                src="/images/soggydoggylogo.jpg"
                 alt="Soggy Doggy Grooming logo"
                 className="h-full w-full object-cover"
               />
