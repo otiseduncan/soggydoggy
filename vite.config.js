@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: '/soggydoggy/',
+  base: mode === 'production' ? '/soggydoggy/' : '/',
   publicDir: 'public',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
   }
-})
+}))

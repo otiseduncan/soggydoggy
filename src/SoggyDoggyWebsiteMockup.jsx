@@ -1,4 +1,7 @@
 export default function SoggyDoggyWebsiteMockup() {
+  const imagePath = (fileName) => `${import.meta.env.BASE_URL}images/${fileName}`;
+  const logoSrc = imagePath("soggydoggylogo.jpg");
+
   const services = [
     "Bath & Brush",
     "Full Grooming",
@@ -16,32 +19,32 @@ export default function SoggyDoggyWebsiteMockup() {
 
   const gallery = [
     {
-      src: "/images/soggydoggypic1.png",
+      src: imagePath("soggydoggypic1.png"),
       title: "Yorkie Style",
       note: "Fresh trim with a fun tie and boutique finish.",
     },
     {
-      src: "/images/soggydoggypic2.png",
+      src: imagePath("soggydoggypic2.png"),
       title: "Holiday Bandana Look",
       note: "Clean, polished grooming with personality.",
     },
     {
-      src: "/images/soggydoggypic3.png",
+      src: imagePath("soggydoggypic3.png"),
       title: "Classic Poodle Finish",
       note: "Neat lines, fluffy ears, and a happy smile.",
     },
     {
-      src: "/images/soggydoggypic4.png",
+      src: imagePath("soggydoggypic4.png"),
       title: "Soft Teddy Bear Cut",
       note: "A gentle rounded look for a sweet finish.",
     },
     {
-      src: "/images/soggydoggypic5.png",
+      src: imagePath("soggydoggypic5.png"),
       title: "Tiny Boutique Style",
       note: "Styled topknot with a bow and tidy face trim.",
     },
     {
-      src: "/images/soggydoggypic6.png",
+      src: imagePath("soggydoggypic6.png"),
       title: "Schnauzer Groom",
       note: "Sharp detail work with signature expression.",
     },
@@ -54,7 +57,7 @@ export default function SoggyDoggyWebsiteMockup() {
           <div className="flex items-center gap-3">
             <div className="h-12 w-12 overflow-hidden rounded-full bg-[#e8def7] ring-2 ring-[#efe7f9]">
               <img
-                src="/images/soggydoggylogo.jpg"
+                src={logoSrc}
                 alt="Soggy Doggy Grooming logo"
                 className="h-full w-full object-cover"
               />
@@ -131,7 +134,7 @@ export default function SoggyDoggyWebsiteMockup() {
                 <div className="mb-6 rounded-[1.5rem] bg-gradient-to-br from-[#efe7f9] to-[#edf8ea] p-4">
                   <div className="overflow-hidden rounded-[1.5rem] bg-white/80">
                     <img
-                      src="/images/soggydoggylogo.jpg"
+                      src={logoSrc}
                       alt="Soggy Doggy Grooming logo"
                       className="h-64 w-full object-contain sm:h-72"
                     />
