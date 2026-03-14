@@ -2,6 +2,8 @@
 
 A modern, responsive React website for Soggy Doggy Grooming - a pet grooming salon in Milledgeville, GA.
 
+🌐 **Live Site**: [https://otiseduncan.github.io/soggydoggy/](https://otiseduncan.github.io/soggydoggy/)
+
 ## Features
 
 - 📱 Fully responsive design
@@ -12,27 +14,66 @@ A modern, responsive React website for Soggy Doggy Grooming - a pet grooming sal
 - 📍 Interactive Google Maps location
 - 🔗 Social media integration
 
-## Getting Started
+## Tech Stack
 
-This is a React component that can be integrated into any React application using Tailwind CSS.
+- **React 18** - UI framework
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **GitHub Pages** - Hosting
+
+## Getting Started
 
 ### Prerequisites
 
-- Node.js and npm
-- React project setup
-- Tailwind CSS configured
+- Node.js 18+ and npm
 
-### Usage
+### Installation
 
-Import and use the component in your React application:
+```bash
+# Clone the repository
+git clone https://github.com/otiseduncan/soggydoggy.git
+cd soggydoggy
 
-```jsx
-import SoggyDoggyWebsiteMockup from './src/SoggyDoggyWebsiteMockup';
+# Install dependencies
+npm install
 
-function App() {
-  return <SoggyDoggyWebsiteMockup />;
-}
+# Start development server
+npm run dev
 ```
+
+Visit `http://localhost:5173` to view the site locally.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The built site will be in the `dist` folder.
+
+## Project Structure
+
+```
+soggydoggy/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # GitHub Pages deployment
+├── public/
+│   └── images/                 # Logo and gallery images
+├── src/
+│   ├── SoggyDoggyWebsiteMockup.jsx  # Main component
+│   ├── main.jsx                # App entry point
+│   └── index.css               # Tailwind imports
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+```
+
+## Deployment
+
+The site automatically deploys to GitHub Pages when changes are pushed to the `main` branch via GitHub Actions.
 
 ## Contact Information
 
