@@ -283,11 +283,11 @@ export default function SoggyDoggyWebsiteMockup() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {gallery.map((item) => (
               <div key={item.src} className="group overflow-hidden rounded-[2rem] border border-[#e6def5] bg-white shadow-sm">
-                <div className="h-72 overflow-hidden bg-gradient-to-br from-[#efe7f9] to-[#edf8ea]">
+                <div className="aspect-[4/5] overflow-hidden bg-gradient-to-br from-[#efe7f9] to-[#edf8ea] p-4 flex items-center justify-center">
                   <img
                     src={item.src}
                     alt={item.title}
-                    className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                    className="max-h-full max-w-full object-contain transition duration-300"
                   />
                 </div>
                 <div className="p-5">
